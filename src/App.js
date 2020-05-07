@@ -93,11 +93,13 @@ const App = () =>{
 
   return (
       <Container className="p-5">
+        <h1 className="text-success text-center" >Luppu Choda Game</h1>
           <ToastContainer position="bottom-center"/>
           <Row>
             <Col md={6} className="offset-md-3">
               {winMessage ? (
                   <div className="mb-2 mt-2">
+                    
                     <h1 className="text-success text-uppercase text-center">
                     {winMessage}
                     </h1>
@@ -111,6 +113,7 @@ const App = () =>{
                   <h1 className= "text-center text-warning">
                     {isCross ? "Cross" : "Circle"} turns
                   </h1>
+
               ) }
               <div className="grid">
                 {itemArray.map((item,index) => (
